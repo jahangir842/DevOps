@@ -44,12 +44,6 @@ curl -o actions-runner-linux-x64-2.317.0.tar.gz -L https://github.com/actions/ru
 # Extract the installer
 tar xzf ./actions-runner-linux-x64-2.317.0.tar.gz
 
-# Configure the runner
-./config.sh --url https://github.com/<OWNER>/<REPO> --token <TOKEN>
-```
-
-🔁 Replace `<OWNER>`, `<REPO>`, and `<TOKEN>` accordingly.
-
 ---
 
 ## 🔹 2. Configure the Runner
@@ -57,6 +51,7 @@ tar xzf ./actions-runner-linux-x64-2.317.0.tar.gz
 ```bash
 ./config.sh --url https://github.com/<OWNER>/<REPO> --token <TOKEN>
 ```
+🔁 Replace `<OWNER>`, `<REPO>`, and `<TOKEN>` accordingly.
 
 ✅ This step registers the runner with GitHub.  
 It will prompt for:

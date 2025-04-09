@@ -19,6 +19,32 @@
 
 ---
 
+## Configure Passwordless `sudo` on Runner
+
+1. Edit the sudoers file:
+
+   ```bash
+   sudo visudo
+   ```
+
+2. Add the following line at the end of the file, replacing `your_username` with your actual username:
+
+   ```bash
+   your_username ALL=(ALL) NOPASSWD: ALL
+   ```
+
+   Or, to allow passwordless `sudo` only for specific commands:
+
+   ```bash
+   your_username ALL=(ALL) NOPASSWD: /usr/bin/singularity
+   ```
+
+3. Save and exit the editor (`Ctrl+X`, then `Y`, and `Enter`).
+
+This will allow your user to execute `sudo` commands without being prompted for a password.
+
+---
+
 ## 🔹 1. Create a Runner on GitHub
 
 ### ➤ Go to your repo or org:

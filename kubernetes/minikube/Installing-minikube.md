@@ -218,6 +218,11 @@ minikube v1.34.0 on Ubuntu 22.04
    ```bash
    minikube status
    ```
+
+
+minikube addons enable storage-provisioner
+minikube addons enable default-storageclass
+
 ### Cluster Management with Minikube
 
 - **Pause the cluster without affecting running applications**:

@@ -10,7 +10,8 @@ spec:
   resources:
     requests:
       storage: 10Gi    # Request 10GB of storage space
-  storageClassName: local-path  # Using Rancher's local-path provisioner
+  # storageClassName: local-path  # Using Rancher's local-path provisioner
+  storageClassName: standard  # Using default storage class in k3s
 
 ---
 # PVC for Grafana - stores dashboards, users, and other configurations
@@ -25,4 +26,5 @@ spec:
   resources:
     requests:
       storage: 5Gi     # Request 5GB of storage space
-  storageClassName: local-path  # Using Rancher's local-path provisioner
+  # storageClassName: local-path  # Using Rancher's local-path provisioner
+  storageClassName: standard  # Using default storage class in k3s

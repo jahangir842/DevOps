@@ -1,5 +1,11 @@
 # 📘 Ansible Automation Repository
 
+## Readword Demo:
+
+- https://github.com/NASTP-ce/llm-arena/tree/main/ansible
+
+
+
 This repository contains **infrastructure automation playbooks** and **roles** managed with Ansible.
 It follows a best-practice layout where all automation tasks (NFS, Docker, monitoring tools, etc.) live in one place.
 
